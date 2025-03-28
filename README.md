@@ -6,7 +6,7 @@
 
 <h3>Link do projeto</h3>
 
-<p><a href="https://portfolio-react-zeta-azure.vercel.app/" target="_blank" rel="noopener noreferrer">Acesse o projeto</a></p>
+<p><a href="https://portfolio-alexandre-two.vercel.app/" target="_blank" rel="noopener noreferrer">Acesse o projeto</a></p>
 
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi criado para apresentar minha trajetória como desenvolvedor Front-End, destacar os projetos em que trabalhei e as tecnologias com as quais tenho experiência.
