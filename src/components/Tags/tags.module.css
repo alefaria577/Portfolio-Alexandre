@@ -1,0 +1,102 @@
+.tag {
+    display: flex;
+    gap: 6px;
+    padding: 8px 6px;
+    width: max-content;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    span {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    svg{
+        font-size: 20px;
+    }
+}
+
+
+
+.html{
+    color: var(--white-default);
+    background-color: #F13C16;
+}
+
+.css{
+    color: var(--white-default);
+    background-color: #3377F1;
+}
+
+.js{
+    color: var(--white-default);
+    background-color: #E1AC02;
+}
+
+.jquery{
+    color: var(--white-default);
+    background-color: #0F65A2;
+}
+
+.bootstrap{
+    color: var(--white-default);
+    background-color: #8118FA;
+}
+
+.react{
+    color: var(--white-default);
+    background-color: #2C99DD;
+}
+
+.reactTS{
+    color: var(--white-default);
+    background-color: #0F65A2;
+}
+
+.nodejs{
+    color: var(--white-default);
+    background-color: #689F63;
+}
+
+.ts{
+    color: var(--white-default);
+    background-color: #3576F1;
+}
+
+.kotlin{
+    color: var(--white-default);
+    background-color: #8051FE;
+}
+
+.jetpackCompose{
+    color: var(--white-default);
+    background-color: #2BAB6B;
+}
+
+.mysql{
+    color: var(--white-default);
+    background-color: #08638A;
+}
+
+.mongodb{
+    color: var(--white-default);
+    background-color: #4FAA41;
+}
+
+.git{
+    color: var(--white-default);
+    background-color: #F16B16;
+}
+
+.firebase{
+    color: var(--white-default);
+    background-color: #F16B16;
+}
+
+.socket{
+    color: var(--white-default);
+    background-color: #21AF90;
+}

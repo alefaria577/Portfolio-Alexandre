@@ -1,0 +1,93 @@
+.dark { 
+    h1 {
+        background: linear-gradient(105deg, #4a88e7 3.66%, #d9ddea 36.06%, #5993ef 67.46%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btnAllProject {
+        color: var(--secondary-dark);
+        background-color: var(--white-default);
+    }
+}
+
+.light {
+    h1 {
+        background: linear-gradient(105deg, #050C28 3.66%, #005CE9 6.87%, #014DC4 9.1%, #050C28 10.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btnAllProject {
+        color: var(--primary-light);
+        background-color: var(--text-light);
+    }
+}
+
+.secProject {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Reduzido de 56px */
+    padding-top: 30px;
+    padding-right: 136px;
+    padding-bottom: 0; /* Remover qualquer padding extra na parte inferior */
+    align-items: center;
+    min-height: 0; /* Garante que o espaço extra seja evitado */
+}
+
+.secProject h1 {
+    width: 100%;
+    font-size: clamp(2.625rem, -0.0536rem + 2.8571vw, 3.375rem);
+    font-style: normal;
+    font-weight: 800;
+}
+
+.containerProjects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px 0px; /* Reduzido o gap entre os itens */
+    width: 100%;
+}
+
+.boxTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btnAllProject {
+    padding: 12px 32px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    transition: .5s all;
+}
+
+.btnAllProject:hover {
+    scale: 1.03;
+}
+
+@media(max-width:767px) {
+    .secProject {
+        display: flex;
+        flex-direction: column;
+        gap: 30px; /* Reduzido de 56px */
+        padding-right: 0px;
+        padding: 30px 30px;
+        align-items: center;
+    }
+
+    .containerProjects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px 0px; /* Ajustado para o tamanho da tela pequena */
+        width: 100%;
+    }
+}

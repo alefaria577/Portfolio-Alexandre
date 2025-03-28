@@ -1,0 +1,239 @@
+.light {
+    background-color: var(--primary-light);
+
+    .boxText {
+        color: var(--text-light);
+    }
+
+    .boxText p {
+        font-weight: 500;
+    }
+
+    .btn {
+        background: radial-gradient(77.41% 68.55% at 50% 50%, #009 0%, rgba(0, 0, 0, 0.87) 49.9%, #003483 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-radius: 4.433px;
+        border: 1px #0f123b solid;
+        transition: 0.5s all;
+    }
+
+    .btnOpen {
+        cursor: pointer;
+        border-radius: 4.433px;
+        background-color: var(--text-light);
+        color: var(--primary-light);
+    }
+
+    .btnOpen::before {
+        cursor: pointer;
+        background-color: var(--secondary-dark); /* Cor da barra deslizante (fundo no hover) */
+    }
+
+    .btnOpen:hover {
+        cursor: pointer;
+        color: #fff; /* Cor do texto no hover */
+        scale: 1.08;
+        border-radius: 8px;
+    }
+    
+}
+
+.dark {
+    background-color: #1d204e;
+
+    .boxText h2 {
+        color: var(--white-default);
+    }
+
+    .boxText p {
+        color: #fff;
+    }
+
+    .btn {
+        background: radial-gradient(168.93% 67.04% at 51.72% 60.35%, #4a88e7 0%, #d9ddea 32.5%, #5993ef 64%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-radius: 4.433px;
+        border: 1px #4a88e7 solid;
+        transition: 0.5s all;
+    }
+
+    .btnOpen {
+        cursor: pointer;
+        border-radius: 4.433px;
+        color: var(--secondary-dark);
+        background-color: var(--white-default);
+    }
+
+    .btnOpen::before {
+        cursor: pointer;
+        background-color: var(--secondary-dark); /* Cor da barra deslizante (fundo no hover) */
+    }
+
+    .btnOpen:hover {
+        cursor: pointer;
+        color: #fff; /* Cor do texto no hover */
+        scale: 1.08;
+        border-radius: 8px;
+    }
+}
+
+.btnDeploy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btnOpen {
+    cursor: pointer;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    height: max-content;
+    width: max-content;
+    padding: 6px 14px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* Cor de fundo inicial */
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.btnOpen::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 0;
+}
+
+.btnOpen:hover::before {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    right: auto;
+    content: "Deploy";
+}
+
+.btnOpen:hover {
+    cursor: pointer;
+    scale: 1.08;
+    border-radius: 8px;
+}
+
+.btnOpen > * {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.cardProject {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 20px;
+    width: 46%;
+    height: max-content;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    scale: 1.08;
+}
+
+.dataProject {
+    display: flex;
+    gap: 12px;
+}
+
+.dataProject img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.boxText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: max-content;
+}
+
+.boxText h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.boxText p {
+    text-align: justify;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.btn {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    height: max-content;
+    width: max-content;
+    padding: 6px 14px;
+}
+
+.btnMore {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media (max-width: 1400px) {
+    .cardProject {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .dataProject {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boxText {
+        width: 100%;
+    }
+    .dataProject img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .cardProject {
+        width: 46%;
+    }
+}
+
+@media (max-width: 640px) {
+    .cardProject {
+        width: 100%;
+    }
+}

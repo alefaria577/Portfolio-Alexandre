@@ -1,0 +1,80 @@
+.linkCVDark {
+    color: var(--secondary-dark);
+    background-color: var(--white-default);
+}
+
+.linkCVDark:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.linkCVLight {
+    color: var(--primary-light);
+    background-color: var(--text-light);
+}
+
+.linkCVLight:hover {
+    background-color: rgba(15, 18, 59, 0.9);
+}
+
+.linkCVDark,
+.linkCVLight {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 16px 42px;
+    width: max-content;
+    border-radius: 50px;
+    transition:
+        box-shadow 0.25s ease-out,
+        background-color 0.2s ease-out;
+}
+
+.linkCVDark span,
+.linkCVLight span {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.linkCVDark svg,
+.linkCVLight svg {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1500px) {
+    .linkCVDark,
+    .linkCVLight {
+        gap: 30px;
+        padding: 12px 32px;
+    }
+
+    .linkCVDark span,
+    .linkCVLight span {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    .linkCVDark svg,
+    .linkCVLight svg {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .linkCVDark,
+    .linkCVLight {
+        gap: 30px;
+        padding: 10px 28px;
+    }
+
+    .linkCVDark span,
+    .linkCVLight span {
+        font-size: 1.25rem;
+    }
+
+    .linkCVDark svg,
+    .linkCVLight svg{
+        font-size: 1.25rem;
+    }
+}

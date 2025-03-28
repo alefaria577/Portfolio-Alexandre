@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    height: 100vh;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav {
+    padding: 32px 0px;
+    width: 120px;
+    height: 94%;
+    border-radius: 24px;
+}
+
+.dark .nav {
+    background: none;
+    background-color: var(--secondary-dark) !important;
+}
+
+.light .nav {
+    background-color: var(--primary-light);
+}
+
+.activeBar,
+.disableBar,
+.itemMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.itemTheme {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.itemNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding: 8px 10px; */
+    border-radius: 15px;
+    height: auto;
+}
+
+.activeBar p,
+.disableBar p,
+.itemMenu p,
+.itemNav p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.dark .activeBar p,
+.dark .disableBar p,
+.dark .itemMenu p,
+.dark .itemNav p {
+    color: var(--white-default);
+}
+
+.light .activeBar p,
+.light .disableBar p,
+.light .itemMenu p,
+.light .itemNav p {
+    color: var(--tertiary-light);
+}
+
+.dark .activeBar {
+    background-color: var(--primary-dark);
+}
+
+.light .activeBar {
+    background-color: var(--secondary-light);
+}
+
+.replaceTheme {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.iconTheme{
+    animation: spin 1s linear ;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1500px) {
+    .header {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,157 @@
+.headerMobile {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 28px;
+    height: 100px;
+    width: 100%;
+
+    span {
+        font-size: 36px;
+        font-weight: 700;
+    }
+}
+
+.dark {
+    background-color: var(--secondary-dark) !important;
+
+    .iconMenu {
+        color: var(--white-default);
+    }
+
+    span {
+        color: var(--white-default);
+    }
+}
+
+.iconMenu {
+    font-size: 3rem;
+}
+
+.light {
+    background-color: #80aef5;
+
+    .iconMenu {
+        background: linear-gradient(105deg, #050c28 3.66%, #005ce9 49.87%, #014dc4 56.1%, #050c28 103.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    span {
+        background: linear-gradient(105deg, #050c28 3.66%, #005ce9 49.87%, #014dc4 56.1%, #050c28 103.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.close {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 2.5rem;
+    padding-right: 12px;
+}
+
+.navDark {
+    padding: 16px 0px;
+    background-color: var(--secondary-dark) !important;
+
+    .close {
+        color: var(--white-default);
+    }
+}
+
+.navLight {
+    background-color: var(--primary-light) !important;
+
+    .close {
+        color: var(--tertiary-light);
+    }
+}
+
+.activeBar,
+.disableBar,
+.itemMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.itemNav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding: 8px 10px; */
+    border-radius: 15px;
+}
+
+.itemTheme {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.activeBar p,
+.disableBar p,
+.itemMenu p,
+.itemNav p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.navDark .activeBar p,
+.navDark .disableBar p,
+.navDark .itemMenu p,
+.navDark .itemNav p {
+    color: var(--white-default);
+}
+
+.navLight .activeBar p,
+.navLight .disableBar p,
+.navLight .itemMenu p,
+.navLight .itemNav p {
+    color: var(--tertiary-light);
+}
+
+.navDark .activeBar {
+    background-color: var(--primary-dark);
+}
+
+.navLight .activeBar {
+    background-color: var(--secondary-light);
+}
+
+.replaceTheme {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 10px;
+    border-radius: 15px;
+}
+
+.iconTheme{
+    animation: spin 1s linear ;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
