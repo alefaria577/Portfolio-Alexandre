@@ -130,7 +130,7 @@ export function TagFirebase(){
 
 export function TagModelagem3D(){
     return(
-        <div className={`${styles.tag} ${styles.firebase}`}>
+        <div className={`${styles.tag} ${styles.modelagem3d}`}>
             <span>Modelagem3D</span>
         </div>
     )
