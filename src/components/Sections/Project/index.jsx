@@ -1,10 +1,11 @@
 import { useInView } from "react-intersection-observer";
 import useContexts from "../../../hooks/useContext";
 import CardProjectSmall from "../../CardProjectSmall";
-import { TagCss, TagFirebase, TagGit, TagHtml, TagJavascript, TagMySql, TagNodejs, TagReact, TagTypescript, TagJQuery, TagBootstrap, TagKotlin } from "../../Tags";
+import { TagCss, TagFirebase, TagGit, TagHtml, TagJavascript, TagMySql, TagNodejs, TagReact, TagTypescript, TagJQuery, TagBootstrap, TagKotlin, TagModelagem3D } from "../../Tags";
 import styles from "./project.module.css";
 import FormulaE from "../../../assets/projects/FormulaE.jpg"
 import JFeletronic from "../../../assets/projects/JF_Eletronic.jpg"
+import Espada from "../../../assets/projects/imagem_espada.jpg"
 
 export default function Project() {
     const { setActiveSection, toogleThemeElement } = useContexts()
@@ -63,6 +64,20 @@ export default function Project() {
                         </div>
                     }
                 />
+
+                <CardProjectSmall
+                    name='Espada 3D'
+                    description='Essa é uma espada 3D modelada usando técnicas de Modelagem 3D'
+                    image={Espada}
+                    to='https://github.com/alefaria577/Modelagem-3D'
+                    technologies={
+                        <div className={styles.boxTags}>
+                            <TagModelagem3D />
+
+                        </div>
+                    }
+                />
+
             </div>
             {/* <Link
                 to='/'
